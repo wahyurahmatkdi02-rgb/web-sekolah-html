@@ -1258,4 +1258,50 @@ button:hover {
     object-fit: cover;
     display: block;
 }
- 
+
+@media (max-width: 768px) {
+
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    nav#navMenu {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 8px;
+        margin: 10px 0;
+    }
+
+    nav#navMenu.active {
+        display: flex;
+    }
+
+    nav#navMenu a {
+        width: 100%;
+    }
+
+    nav#navMenu button,
+    nav#navMenu .nav-ppdb {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+}
